@@ -1,93 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Интернет-резюме</title>
-</head>
-<body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="yjoebnYDx2c.jpg" width="200" alt="Изображение недоступно">
-            </td>
-            <td>
-                <h1>Нестеров Даниил Игоревич</h1>
-                <p><em>Студент 4-го курса КамчатГТУ</em></p>
-                <p>Обучаюсь на направлении подготовки <strong>"Программная инженерия"</strong></p>
-            
-            </td>
-        </tr>
-    </table>
+    <head>
+        <meta charset="UTF-8">
+        <title>Интернет-резюме</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="info">
+                <img src="yjoebnYDx2c.jpg" alt="Изображение недоступно" class="image">
+
+                <div class="info-text">
+                    <h1>Нестеров Даниил Игоревич</h1>
+                    <p>Год рождения: 2001</p>
+                    <p>Студент 4-го курса КамчатГТУ</p>
+                    <p>Обучаюсь на направлении подготовки <strong>"Программная инженерия"</strong></p>
+
+                    <h4>Способы связи</h4>
+
+                        <a href="https://t.me/NesterovD" target="_blank">Telegram</a>
+                        |
+                        <a href="https://vk.com/zanyda121101" target="_blank">VKontakte</a>
+                    </div>
+            </div>
+
+            <div class="card bg-yellow">
+                <h2>Опыт</h2>
+                <ol class="list">
+                    <li>Волонтёр-организатор</li>
+                    <li>Программист</li>
+                    <li>Водитель</li>
+                </ol>
+            </div>
+
+            <div class="card bg-green">
+                <h2>Образование</h2>
+                <table class="table">
+                    <tr>
+                        <td>Средняя школа №1 г. Вилючинска</td>
+                        <td>Среднее общее образование</td>
+                        <td>2008-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Музыкальная школа №1 г.Вилючинска</td>
+                        <td>Класс балалайки и гитары</td>
+                        <td>2009-2017</td>
+                    </tr>
+                    <tr>
+                        <td>Камчатский государственный технический университет</td>
+                        <td>Высшее образование (бакалавриат)</td>
+                        <td>2019-2023</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card bg-red">
+                <h2>Профили в сервисах</h2>
+                <ul class="link-list">
+                    <li>
+                        <a href="https://dobro.ru/volunteers/225198" target="_blank">Паспорт волонтёра</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCCfLHVwDlqdHHDIOnriysQw" target="_blank">Канал на Youtube</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h2>Связаться со мной</h2>
+
+                <form action="/">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" placeholder="Начните ввод...">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Начните ввод...">
+                        </div>
+
+                    <div class="form-group">
+                            <label for="number">Контактный номер:</label>
+                            <input type="number" id="number" placeholder="Начните ввод...">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="text">Ваше сообщение:</label>
+                        <textarea id="text" cols="30" rows="3"></textarea>
+                    </div>
+
+                    <input class="button" type="submit" value="Связаться">
+                </form>
+            </div>
+
+            <div class="position">
+                <div class="box"></div>
+            </div>
+
+    </div> 
     
-    <hr>
-
-    <h2>Способы связи</h2>
-    <ul type="square">
-        <li><a href="https://t.me/NesterovD" target="_blank">Telegram</a></li>
-        <li><a href="https://vk.com/zanyda121101" target="_blank">VKontakte</a></li>
-    </ul>
-    
-    <hr>
-
-    <h2>Опыт</h2>
-    <ol type="I">
-        <li>Волонтёр-организатор</li>
-        <li>Программист</li>
-        <li>Водитель</li>
-    </ol>
-
-    <hr>
-
-    <h2>Образование</h2>
-    <table border="2">
-        <tr>
-            <th>Учебное заведение</th>
-            <th>Уровень образования</th>
-            <th>Годы поступления и окончания</th>
-        </tr>
-        <tr>
-            <td>Средняя школа №1 города Вилючинск</td>
-            <td>Среднее общее образование</td>
-            <td>2008-2019</td>
-        </tr>
-        <tr>
-            <td>Камчатский государственный технический университет</td>
-            <td>Высшее образование (бакалавриат)</td>
-            <td>2019-2023</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <h2>Профиль на Добро.рф</h2>
-    <a href="dobro.html" target="_blank">Посмотреть профиль</a>
-
-    <hr>
-
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Начните ввод...">
-        
-        <br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Начните ввод...">
-
-        <br>
-
-        <label for="number">Контактный номер:</label>
-        <input type="number" id="number" placeholder="Начните ввод...">
-
-        <br>
-
-        <label for="text">Ваше сообщение:</label>
-        <textarea id="text" cols="30" rows="3"></textarea>
-
-        <br>
-
-        <input type="submit" value="Связаться">
-    </form>
-</body>
+    <div style="margin-bottom: 500px"></div>
+    </body>
 </html>
