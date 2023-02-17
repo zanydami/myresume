@@ -6,9 +6,8 @@
 } */
 
 body {
-  background-color: lightcyan;
+  background-image: url(pattern-hand-drawn-dashes-2.svg);
   color: rgb(69, 23, 0);
-
   font-size: 16px;
   font-weight: normal;
   font-family: 'Roboto', sans-serif;
@@ -211,9 +210,9 @@ a:active {
 
 .box {
   position: fixed;
-  bottom: 50px;
+  bottom: 100px;
   left: 10px;
-  width: 25%;
+  width: 50px;
   height: 50px;
   background: lightcoral;
 }
